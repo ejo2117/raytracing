@@ -36,9 +36,9 @@ int main() {
 
     // Calculate the vectors across the horizontal and down the vertical viewport edges.
     auto viewport_u = vec3(viewport_width, 0, 0);
-    auto viewport_v = vec3(0, -viewport_width, 0);
+    auto viewport_v = vec3(0, -viewport_height, 0);
 
-    // Calcualte the horizontal and vertical delta vectors from pixel to pixel.
+    // Calculate the horizontal and vertical delta vectors from pixel to pixel.
     auto pixel_delta_u = viewport_u / image_width;
     auto pixel_delta_v = viewport_v / image_height;
 
