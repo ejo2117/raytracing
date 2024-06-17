@@ -1,6 +1,7 @@
 .DS_STORE
 .vscode
 *.ppm
+/build/*
 
 # Compiled Object files
 *.slo
