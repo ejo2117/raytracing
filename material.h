@@ -26,7 +26,7 @@ class lambertian : public material {
 
             // Catch degenerate scatter direction
             if (scatter_direction.near_zero())
-                scatter_direction = rec.normal();
+                scatter_direction = rec.normal;
             
             scattered = ray(rec.p, scatter_direction);
             attenuation = albedo;
@@ -42,7 +42,7 @@ class metal : public material {
 
         bool scatter(const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered)
         const override {
-            vec3 reflected = reflect(r_in.direction(), rec.normal());
+            vec3 reflected = reflect(r_in.direction(), rec.normal);
             scattered = ray(rec.p, reflected);
             attenuation = albedo;
             return true;
