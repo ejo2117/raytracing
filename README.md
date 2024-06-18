@@ -13,3 +13,7 @@ and view the scene in ppm format:
 ```
 ./render > scene.ppm
 ```
+
+you should end up with an image that looks like this:
+
+![scene](https://github.com/ejo2117/raytracing/assets/35907890/47279041-8656-48aa-8be7-1358458d3f34)
